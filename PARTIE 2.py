@@ -1,51 +1,34 @@
 #1
-ligne0=[" ","A"," ","B"," ","C"]
-ligne1=["1"," ","*"," ","*"," "]
-ligne2=["2","*","*","*","*","*"]
-ligne3=["3"," ","*"," ","*"," "]
-ligne4=["4","*","*","*","*","*"]
-ligne5=["5"," ","*"," ","*"," "]
-
-print(ligne0)
-print(ligne1)
-print(ligne2)
-print(ligne3)
-print(ligne4)
-print(ligne5)
-
+A=[".",".","."]
+B=[".",".","."]
+C=[".",".","."]
+Grille=[A,B,C]
+for i in range(0,len(Grille)):
+    print(Grille[i])
 
 #2
-ligne0=[" ","A"," ","B"," ","C"]
-ligne1=["1"," ","*"," ","*"," "]
-ligne2=["2","*","*","*","*","*"]
-ligne3=["3"," ","*"," ","*"," "]
-ligne4=["4","*","*","*","*","*"]
-ligne5=["5"," ","*"," ","*"," "]
-joueur = ' '
+A=[".",".","."]
+B=[".",".","."]
+C=[".",".","."]
+Grille=[A,B,C]
+for i in range(0,len(Grille)):
+    print(Grille[i])
+player="X"
+save= ''
 
-print("croix ou rond?")
-print("1= X / 2= O")
-joueur = input('')
-if(joueur=="1"):
-    joueur = "X"
-    print("Vous etes croix")
-if(joueur=="2"):
-    joueur=="O"
-    print("Vous etes rond")
-else:
-    print("Choix par défaut: Vous etes croix")
-    joueur = "X"
-print(" ")
-ligne1[1]= joueur
+print("CROIX ou ROND?")
+print("1: X / 2:O")
+save=input()
+if(save==1):
+    player="X"
+if(save==2):
+    player="O"
 
-print(ligne0)
-print(ligne1)
-print(ligne2)
-print(ligne3)
-print(ligne4)
-print(ligne5)
+A[1]=player
+for i in range(0,len(Grille)):
+    print(Grille[i])
 
-
+#3
 
 
 
